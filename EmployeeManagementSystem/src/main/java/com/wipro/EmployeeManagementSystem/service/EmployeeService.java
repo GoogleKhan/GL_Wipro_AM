@@ -16,6 +16,7 @@ public class EmployeeService {
 	private EmployeeRepository employeeRepository;
 
 	public Employee add(Employee emp) {
+
 		return employeeRepository.save(emp);
 	}
 
@@ -28,6 +29,9 @@ public class EmployeeService {
 	}
 
 	public Optional<Employee> getOne(long id) {
+		if (id < 0) {
+			throw new RuntimeException("Invalid Id");
+		}
 		return employeeRepository.findById(id);
 	}
 
