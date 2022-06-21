@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="cricketCoach"
+		class="com.greatlearning.springdemo.CricketCoach">
+		<constructor-arg name="expertAdvice"
+			ref="myExpertAdvice"></constructor-arg>
+	</bean>
+
+
+	<bean id="footballCoach"
+		class="com.greatlearning.springdemo.FootballCoach">
+		<property name="expertAdvice" ref="myExpertAdvice"></property>
+	</bean>
+
+	<bean id="myExpertAdvice"
+		class="com.greatlearning.springdemo.PracticeAdvice"></bean>
+
+</beans>
+
+
+
+
+
