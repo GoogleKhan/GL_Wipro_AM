@@ -1,16 +1,12 @@
 package com.wipro.SpringBootLibraryDesign.model;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
 
-@Getter
-@Setter
-@ToString
+//Equivalent to {@code @Getter @Setter @RequiredArgsConstructor @ToString @EqualsAndHashCode}.
+@Data
+
 @AllArgsConstructor
-@NoArgsConstructor
 public class GreatLearning {
 
 	private String courseName;

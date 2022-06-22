@@ -20,15 +20,15 @@ public class LibraryDesignApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		System.out.println("Hello From Run method");
 		
-		GreatLearning greatLearning= new GreatLearning("SpringBoot", "Backend", "Shadab");		
-		System.out.println(greatLearning);
-		
-		GreatLearning greatLearning2 = new GreatLearning();
-		greatLearning2.setCourseName("Angular");
-		greatLearning2.setCourseType("Frontend");
-		greatLearning2.setInstructorName("Khan");
-		
-		System.out.println(greatLearning2);
+//		GreatLearning greatLearning= new GreatLearning("SpringBoot", "Backend", "Shadab");		
+//		System.out.println(greatLearning);
+//		
+//		GreatLearning greatLearning2 = new GreatLearning();
+//		greatLearning2.setCourseName("Angular");
+//		greatLearning2.setCourseType("Frontend");
+//		greatLearning2.setInstructorName("Khan");
+//		
+//		System.out.println(greatLearning2);
 
 	}
 
